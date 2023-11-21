@@ -30,6 +30,10 @@ function RecipeCreate({createRecipes}) {
   
     const handleSubmit = (event) => {
     event.preventDefault();
+    if (!formData.name || !formData.cuisine || !formData.photo || !formData.ingredients || !formData.preparation) {
+    alert("Please fill in all required fields");
+    return;
+    }
     createRecipes(formData);
     setFormData({...initialFormState})
   }

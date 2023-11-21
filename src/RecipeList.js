@@ -10,7 +10,7 @@ function RecipeList({recipes, deleteRecipes}) {
   
   return (
     <div className="recipe-list">
-      {JSON.stringify(recipes)}
+      //{JSON.stringify(recipes)}
       <table>
         <thead>
           <tr>
